@@ -25,3 +25,15 @@ The Stroke database:
 <img width="1670" height="310" alt="image" src="https://github.com/user-attachments/assets/e36a585b-8440-4c8c-8c7e-702fc2d407c2" />
 
 <img width="1222" height="942" alt="image" src="https://github.com/user-attachments/assets/e1b1fb6a-e8f7-4241-b7fe-9c23dd6f3e03" />
+
+As we can see, in Bmi column, it has null value and we need to fill it to make the database be useful. The null value need to replace by mean value because it can keep the size of database and mean value is the central tendency value so that the database can be accurately.
+
+<img width="290" height="662" alt="image" src="https://github.com/user-attachments/assets/334920be-db90-48ca-8a1f-5b629007083f" />
+
+After that, I create some EDA univariable and bivariate to check the distribution of data
+
+<img width="1549" height="1476" alt="image" src="https://github.com/user-attachments/assets/ca241327-0702-4a64-bcea-af7ed7808eea" />
+
+<img width="1614" height="1783" alt="image" src="https://github.com/user-attachments/assets/a09813be-1583-4092-bec2-272703975380" />
+
+In this database, I want to focus mainly on 3 columns: Age, Bmi and Avg_glucose_lvel because there are 3 main factors can lead to stroke and they need to be analyzed to research and reduce their impact.
