@@ -19,3 +19,9 @@ The outcomes of this work could contribute to better understanding of gender-spe
 Prediction regression in google colab
 ### 1. Import neccessary libraries and database by python
 At this step, I apply pandas, seabornm, matplotlib, numpy to extract data from kaggle. My database is Stroke prediction database in csv file
+
+The Stroke database: 
+
+<img width="1670" height="310" alt="image" src="https://github.com/user-attachments/assets/e36a585b-8440-4c8c-8c7e-702fc2d407c2" />
+
+<img width="1222" height="942" alt="image" src="https://github.com/user-attachments/assets/e1b1fb6a-e8f7-4241-b7fe-9c23dd6f3e03" />
