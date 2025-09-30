@@ -1,5 +1,5 @@
 # Final-project-Stroke-prediction-data
-📊 Dataset
+📊 **Dataset**
 
 The dataset is sourced from Kaggle - Stroke Prediction Dataset
 
@@ -13,7 +13,7 @@ Smoking status, BMI, Residence type
 
 Glucose level, Work type
 
-📈 Models
+📈** Models**
 
 The notebook includes the following models:
 
@@ -21,20 +21,16 @@ Logistic Regression
 
 Random Forest
 
-Decision Tree
-
-Gradient Boosting
-
 Evaluation metrics:
 
 Accuracy
 
 Precision
 
-📝 Report
+📝** Report**
 
-The detailed methodology and results are described in the Final Report
+The detailed methodology and results are described in the Power Bi, google colab and presentation
 
-👨‍💻 Authors
+👨‍💻 **Authors**
 
 Hà Quang Nam
