@@ -13,7 +13,7 @@ Smoking status, BMI, Residence type
 
 Glucose level, Work type
 
-📈 ** Models**
+📈 **Models**
 
 The notebook includes the following models:
 
@@ -27,7 +27,7 @@ Accuracy
 
 Precision
 
-📝 ** Report**
+📝 **Report**
 
 The detailed methodology and results are described in the Power Bi, google colab and presentation
 
