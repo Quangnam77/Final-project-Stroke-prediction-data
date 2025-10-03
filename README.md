@@ -5,6 +5,8 @@ The dataset is sourced from Kaggle - Stroke Prediction Dataset
 
 Link: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
+Link python: https://colab.research.google.com/drive/15qdgBq6xybNLwLpn5jCzPv3ir6ABx-Zw?authuser=0#scrollTo=RA6H-b9t85la
+
 It contains patient information such as:
 
 Age, Gender, Hypertension, Heart disease
