@@ -1,49 +1,114 @@
-# Final-project-Stroke-prediction-data
-📊 **Dataset**
+# Stroke Prediction Project
 
-The dataset is sourced from Kaggle - Stroke Prediction Dataset
+## 🧠 Overview
 
-Link: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+This repository provides a complete data analysis and predictive modeling pipeline for **Stroke Prediction**, based on the public dataset from Kaggle. The goal of this project is to identify the most influential factors contributing to stroke risk and build a machine learning model capable of predicting potential stroke cases.
 
-Link python: https://colab.research.google.com/drive/15qdgBq6xybNLwLpn5jCzPv3ir6ABx-Zw?authuser=0#scrollTo=RA6H-b9t85la
+## 📂 Project Structure
 
-It contains patient information such as:
+```
+│
+├── analysis.py               # Main Python script: data preprocessing, EDA, model training & evaluation
+├── REPORT.md                 # Executive summary & analytical findings
+├── final_project of stroke prediction.ipynb  # Jupyter notebook version (imported from Colab)
+├── Final project.pbix         # Power BI visualization dashboard
+└── README.md                 # Project documentation (this file)
+```
 
-Age: age of the patient
+## 🎯 Objectives
 
-Hypertension: 0 if the patient doesn't have hypertension, 1 if the patient has hypertension
+* Perform data cleaning and handle missing values.
+* Conduct exploratory data analysis (EDA) to identify correlations and patterns.
+* Encode categorical variables and normalize numerical data.
+* Build a predictive model using **Random Forest Classifier**.
+* Evaluate performance metrics such as accuracy, recall, precision
+* Visualize results interactively in Power BI.
 
-Heart disease:0 if the patient doesn't have any heart diseases, 1 if the patient has a heart disease
+## 🧩 Dataset Information
 
-Smoking status: "formerly smoked", "never smoked", "smokes" or "Unknown"
+* **Source:** [Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+* **Rows:** 5110
+* **Target Variable:** `stroke` (0 = No Stroke, 1 = Stroke)
+* **Features:**
 
-BMI: body mass index
+  * Demographics: `gender`, `age`, `ever_married`, `Residence_type`
+  * Health conditions: `hypertension`, `heart_disease`, `bmi`, `avg_glucose_level`
+  * Lifestyle: `work_type`, `smoking_status`
 
-Residence type: "Rural" or "Urban"
+## ⚙️ Setup Instructions
 
-Glucose level: average glucose level in blood
+### 1. Environment Setup
 
-Work type: "children", "Govt_jov", "Never_worked", "Private" or "Self-employed"
+```bash
+python -m venv venv
+source venv/bin/activate   # For macOS/Linux
+venv\Scripts\activate      # For Windows
+```
 
-📈Insight of models: Power Bi
+### 2. Install Dependencies
 
-Get the details of the relationship of 5 main factors: age, bmi, avg_glucose, heart_disease and hypertension
+Create and install from `requirements.txt`:
 
-Age: Old is the most group have the highest ratio of stroke patent
-While Bmi is Overweight and avg_glucose_level is Diabetes.
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn joblib jupyter
+```
 
-📈 **Models**
+### 3. Run the Analysis
 
-The notebook includes the following models:
+Run the analysis pipeline directly:
 
-Logistic Regression: to determine the proportion of the variance in the dependent variable
+```bash
+python analysis.py --data data/stroke_data.csv --output models/rf_model.joblib
+```
 
-Random Forest: To calculate the accuracy of database
+Or open the Colab/Jupyter notebook:
 
+```bash
+jupyter notebook "final_project of stroke prediction.ipynb"
+```
 
-📝 **Report**
+### 4. Power BI Dashboard
 
-The detailed methodology and results are described in the Power Bi, google colab and presentation
+* Open `Final project.pbix` in Power BI Desktop.
+* Refresh data sources if necessary.
+* Explore stroke risk patterns visually.
+
+## 📊 Model Summary
+
+| Metric    | Description                         | Example Value |
+| --------- | ----------------------------------- | ------------- |
+| Accuracy  | Overall correct predictions         | 0.95          |
+| Precision | True positives / predicted stroke   | 0.40          |
+| Recall    | True positives / actual stroke      | 0.30          |
+| F1-score  | Harmonic mean of precision & recall | 0.34          |
+| ROC-AUC   | Area under ROC curve                | 0.78          |
+
+> **Note:** Due to class imbalance, recall is prioritized over accuracy.
+
+## 💡 Key Insights
+
+* **Age** and **avg_glucose_level** are the strongest predictors.
+* Patients with **hypertension** and **heart disease** show significantly higher risk.
+* Lifestyle variables (e.g., smoking) contribute moderately.
+
+## 🚀 Recommendations
+
+1. Apply **SMOTE** or **class-weight balancing** to improve stroke case detection.
+2. Use **hyperparameter tuning** for better model optimization.
+3. Add **SHAP/LIME** explainability for interpretability.
+4. Integrate with Power BI for real-time dashboards.
+
+## 📈 Future Enhancements
+
+* Integrate deep learning models.
+* Implement real-time prediction API.
+* Automate retraining with new data.
+* Add health-based interpretability dashboard.
+
+## 🧾 License
+
+This project is licensed under the **MIT License** — feel free to use and adapt with proper attribution.
+
 
 👨‍💻 **Authors**
 
